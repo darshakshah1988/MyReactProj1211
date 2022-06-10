@@ -1,0 +1,28 @@
+query NewGenDataQuery($geneId: String!) {
+  studiesAndLeadVariantsForGeneByL2G(geneId: $geneId) {
+    pval
+    yProbaModel
+    study {
+      studyId
+      traitReported
+      pubAuthor
+      pubDate
+      pmid
+      nInitial
+      nReplication
+      hasSumstats
+      colocalisationsForGene(geneId: $geneId) {
+      study {
+        studyId
+        traitReported
+        pubAuthor
+        pubDate
+        pmid
+        hasSumstats
+      }
+    }
+    }
+    
+  }
+  
+}

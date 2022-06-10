@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'Segoe UI', 'Roboto', 'Droid Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.axis-color line,
+.axis-color path {
+  stroke: white;
+}
+
+.axis-path {
+  stroke: #fff;
+}
+.chart-container {
+  display: inline-flex;
+}
+.summary {
+  background-color: #fafafa;
+  border: 1px solid #ededed;
+  color: #666666;
+  position: relative;
+}
+.node-details .row {
+  display: table-row;
+}
+.node-details .col {
+  width: 50%;
+  display: table-cell;
+}
+.node-details .col.text-right {
+  text-align: right;
+}
+.summary .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
